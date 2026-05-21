@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azalea Mobile Detailing - Premium Car Detailing Service</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <svg class="car-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <path d="M3 9l1.5-3h15l1.5 3M5 9v8h14V9M7 17h10M6 14h12M9 9V6h6v3"/>
+                </svg>
+                <span>Azalea Mobile Detailing</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#services">Services</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#booking">Book Now</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Premium Mobile Car Detailing</h1>
+            <p>We come to you! Professional detailing at your home or office</p>
+            <a href="#booking" class="cta-button">Schedule Your Detailing</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <p class="section-subtitle">Choose the perfect package for your vehicle</p>
+            
+            <div class="pricing-cards">
+                <!-- Package A -->
+                <div class="service-card" onclick="selectPackage('A', 70)">
+                    <div class="package-header">
+                        <div class="package-badge">A</div>
+                        <h3>Quick Detail</h3>
+                    </div>
+                    <div class="price">
+                        <span class="currency">$</span>
+                        <span class="amount">70</span>
+                    </div>
+                    <ul class="features">
+                        <li>Quick wash and dry</li>
+                        <li>Vacuum interior</li>
+                        <li>Wheel clean</li>
+                        <li>Tire shine</li>
+                    </ul>
+                    <button class="select-btn">Select Package</button>
+                </div>
+
+                <!-- Package B -->
+                <div class="service-card popular" onclick="selectPackage('B', 155)">
+                    <div class="popular-banner">Most Popular</div>
+                    <div class="package-header">
+                        <div class="package-badge">B</div>
+                        <h3>Premium Detail</h3>
+                    </div>
+                    <div class="price">
+                        <span class="currency">$</span>
+                        <span class="amount">155</span>
+                    </div>
+                    <ul class="features">
+                        <li>Pre-wash and dry</li>
+                        <li>Vacuum interior</li>
+                        <li>Leather dry</li>
+                        <li>Tire shine</li>
+                        <li>Wheels cleaned</li>
+                    </ul>
+                    <button class="select-btn">Select Package</button>
+                </div>
+
+                <!-- Package C -->
+                <div class="service-card" onclick="selectPackage('C', 200)">
+                    <div class="package-header">
+                        <div class="package-badge">C</div>
+                        <h3>Premium Plus</h3>
+                    </div>
+                    <div class="price">
+                        <span class="currency">$</span>
+                        <span class="amount">200</span>
+                    </div>
+                    <ul class="features">
+                        <li>Full exterior detail</li>
+                        <li>Full wash and dry</li>
+                        <li>Leather dry</li>
+                        <li>Tire and wheel shine+clean</li>
+                        <li>Door shuts & windows cleaned</li>
+                        <li>Full interior detail and vacuum</li>
+                    </ul>
+                    <button class="select-btn">Select Package</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Comparison -->
+    <section id="pricing" class="pricing-section">
+        <div class="container">
+            <h2>Detailed Pricing Comparison</h2>
+            <div class="comparison-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Feature</th>
+                            <th>Package A<br><span class="price-highlight">$70</span></th>
+                            <th>Package B<br><span class="price-highlight">$155</span></th>
+                            <th>Package C<br><span class="price-highlight">$200</span></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Quick Wash & Dry</td>
+                            <td class="check">✓</td>
+                            <td class="check">✓</td>
+                            <td class="check">✓</td>
+                        </tr>
+                        <tr>
+                            <td>Pre-Wash Treatment</td>
+                            <td></td>
+                            <td class="check">✓</td>
+                            <td class="check">✓</td>
+                        </tr>
+                        <tr>
+                            <td>Interior Vacuum</td>
+                            <td class="check">✓</td>
+                            <td class="check">✓</td>
+                            <td class="check">✓</td>
+                        </tr>
+                        <tr>
+                            <td>Full Interior Detail</td>
+                            <td></td>
+                            <td></td>
+                            <td class="check">✓</td>
+                        </tr>
+                        <tr>
+                            <td>Leather Treatment</td>
+                            <td></td>
+                            <td class="check">✓</td>
+                            <td class="check">✓</td>
+                        </tr>
+                        <tr>
+                            <td>Wheel Cleaning</td>
+                            <td class="check">✓</td>
+                            <td class="check">✓</td>
+                            <td class="check">✓</td>
+                        </tr>
+                        <tr>
+                            <td>Tire Shine</td>
+                            <td class="check">✓</td>
+                            <td class="check">✓</td>
+                            <td class="check">✓</td>
+                        </tr>
+                        <tr>
+                            <td>Full Exterior Detail</td>
+                            <td></td>
+                            <td></td>
+                            <td class="check">✓</td>
+                        </tr>
+                        <tr>
+                            <td>Door & Window Clean</td>
+                            <td></td>
+                            <td></td>
+                            <td class="check">✓</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="booking" class="booking-section">
+        <div class="container">
+            <div class="booking-wrapper">
+                <div class="booking-form-container">
+                    <h2>Book Your Detailing Service</h2>
+                    <form id="bookingForm" class="booking-form">
+                        <div class="form-group">
+                            <label for="package">Select Package</label>
+                            <select id="package" name="package" required>
+                                <option value="">-- Choose a package --</option>
+                                <option value="A">Package A - Quick Detail ($70)</option>
+                                <option value="B">Package B - Premium Detail ($155)</option>
+                                <option value="C">Package C - Premium Plus ($200)</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required placeholder="Enter your full name">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" required placeholder="(XXX) XXX-XXXX">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="Enter your email (optional)">
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="date">Preferred Date</label>
+                                <input type="date" id="date" name="date" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="time">Preferred Time</label>
+                                <select id="time" name="time" required>
+                                    <option value="">-- Select time --</option>
+                                    <option value="09:00">9:00 AM</option>
+                                    <option value="10:00">10:00 AM</option>
+                                    <option value="11:00">11:00 AM</option>
+                                    <option value="12:00">12:00 PM</option>
+                                    <option value="13:00">1:00 PM</option>
+                                    <option value="14:00">2:00 PM</option>
+                                    <option value="15:00">3:00 PM</option>
+                                    <option value="16:00">4:00 PM</option>
+                                    <option value="17:00">5:00 PM</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="location">Service Location</label>
+                            <input type="text" id="location" name="location" required placeholder="Enter your address">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="notes">Additional Notes (Optional)</label>
+                            <textarea id="notes" name="notes" placeholder="Any special requests or vehicle details"></textarea>
+                        </div>
+
+                        <button type="submit" class="submit-btn">Book Detailing Service</button>
+                    </form>
+                </div>
+
+                <div class="order-summary">
+                    <h3>Order Summary</h3>
+                    <div class="summary-content">
+                        <div class="summary-item">
+                            <span>Selected Package:</span>
+                            <span id="summaryPackage">-</span>
+                        </div>
+                        <div class="summary-item">
+                            <span>Service Price:</span>
+                            <span id="summaryPrice">-</span>
+                        </div>
+                        <div class="summary-divider"></div>
+                        <div class="summary-item total">
+                            <span>Total Amount:</span>
+                            <span id="summaryTotal">$0</span>
+                        </div>
+                        <p class="summary-note">We'll arrive at your location with all necessary equipment. Payment accepted via cash or card.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <h3>Call Us</h3>
+                    <p><a href="tel:9105082978">(910) 508-2978</a></p>
+                    <p><a href="tel:9106220356">(910) 622-0356</a></p>
+                </div>
+                <div class="contact-item">
+                    <h3>Hours</h3>
+                    <p>Monday - Friday: 8:00 AM - 6:00 PM</p>
+                    <p>Saturday: 9:00 AM - 5:00 PM</p>
+                    <p>Sunday: Closed</p>
+                </div>
+                <div class="contact-item">
+                    <h3>Service Area</h3>
+                    <p>Serving the local community</p>
+                    <p>Mobile service to your location</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Azalea Mobile Detailing. All rights reserved.</p>
+            <p>Premium car detailing service delivered to your location</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
