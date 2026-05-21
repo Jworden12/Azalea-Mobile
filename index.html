@@ -11,9 +11,7 @@
     <nav class="navbar">
         <div class="nav-container">
             <div class="logo">
-                <svg class="car-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                    <path d="M3 9l1.5-3h15l1.5 3M5 9v8h14V9M7 17h10M6 14h12M9 9V6h6v3"/>
-                </svg>
+                <img src="azalea-logo.svg" alt="Azalea Mobile Detailing" class="logo-image">
                 <span>Azalea Mobile Detailing</span>
             </div>
             <ul class="nav-links">
@@ -27,6 +25,9 @@
 
     <!-- Hero Section -->
     <section class="hero">
+        <div class="hero-logo">
+            <img src="azalea-logo.svg" alt="Azalea Logo" class="hero-logo-image">
+        </div>
         <div class="hero-content">
             <h1>Premium Mobile Car Detailing</h1>
             <p>We come to you! Professional detailing at your home or office</p>
@@ -43,6 +44,9 @@
             <div class="pricing-cards">
                 <!-- Package A -->
                 <div class="service-card" onclick="selectPackage('A', 70)">
+                    <div class="card-logo">
+                        <img src="azalea-logo.svg" alt="Azalea" class="card-logo-image">
+                    </div>
                     <div class="package-header">
                         <div class="package-badge">A</div>
                         <h3>Quick Detail</h3>
@@ -63,6 +67,9 @@
                 <!-- Package B -->
                 <div class="service-card popular" onclick="selectPackage('B', 155)">
                     <div class="popular-banner">Most Popular</div>
+                    <div class="card-logo">
+                        <img src="azalea-logo.svg" alt="Azalea" class="card-logo-image">
+                    </div>
                     <div class="package-header">
                         <div class="package-badge">B</div>
                         <h3>Premium Detail</h3>
@@ -83,6 +90,9 @@
 
                 <!-- Package C -->
                 <div class="service-card" onclick="selectPackage('C', 200)">
+                    <div class="card-logo">
+                        <img src="azalea-logo.svg" alt="Azalea" class="card-logo-image">
+                    </div>
                     <div class="package-header">
                         <div class="package-badge">C</div>
                         <h3>Premium Plus</h3>
@@ -185,7 +195,10 @@
         <div class="container">
             <div class="booking-wrapper">
                 <div class="booking-form-container">
-                    <h2>Book Your Detailing Service</h2>
+                    <div class="booking-header">
+                        <img src="azalea-logo.svg" alt="Azalea" class="booking-logo">
+                        <h2>Book Your Service</h2>
+                    </div>
                     <form id="bookingForm" class="booking-form">
                         <div class="form-group">
                             <label for="package">Select Package</label>
@@ -249,6 +262,7 @@
                 </div>
 
                 <div class="order-summary">
+                    <img src="azalea-logo.svg" alt="Azalea" class="summary-logo">
                     <h3>Order Summary</h3>
                     <div class="summary-content">
                         <div class="summary-item">
@@ -275,6 +289,9 @@
     <section id="contact" class="contact-section">
         <div class="container">
             <h2>Get In Touch</h2>
+            <div class="contact-header-logo">
+                <img src="azalea-logo.svg" alt="Azalea" class="contact-logo">
+            </div>
             <div class="contact-info">
                 <div class="contact-item">
                     <h3>Call Us</h3>
@@ -298,10 +315,9 @@
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <p>&copy; 2024 Azalea Mobile Detailing. All rights reserved.</p>
-            <p>Premium car detailing service delivered to your location</p>
-        </div>
+        <img src="azalea-logo.svg" alt="Azalea Logo" class="footer-logo">
+        <p>&copy; 2024 Azalea Mobile Detailing. All rights reserved.</p>
+        <p>Premium car detailing service delivered to your location</p>
     </footer>
 
     <script src="script.js"></script>
