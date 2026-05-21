@@ -1,0 +1,67 @@
+<svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+  <!-- Azalea Flower -->
+  <g id="flower">
+    <!-- Left petal -->
+    <path d="M 300 350 Q 250 300 280 250 Q 320 280 320 350 Z" fill="#E85B8A" stroke="#000" stroke-width="20" stroke-linejoin="round"/>
+    <!-- Bottom-left petal -->
+    <path d="M 320 380 Q 280 440 240 450 Q 280 420 360 400 Z" fill="#E85B8A" stroke="#000" stroke-width="20" stroke-linejoin="round"/>
+    <!-- Bottom petal -->
+    <path d="M 380 420 Q 380 480 380 530 Q 390 470 420 420 Z" fill="#E85B8A" stroke="#000" stroke-width="20" stroke-linejoin="round"/>
+    <!-- Bottom-right petal -->
+    <path d="M 440 400 Q 520 420 560 450 Q 510 440 460 380 Z" fill="#E85B8A" stroke="#000" stroke-width="20" stroke-linejoin="round"/>
+    <!-- Right petal -->
+    <path d="M 460 340 Q 510 360 540 320 Q 480 320 440 290 Z" fill="#E85B8A" stroke="#000" stroke-width="20" stroke-linejoin="round"/>
+    <!-- Top-right petal -->
+    <path d="M 420 280 Q 450 240 470 200 Q 440 260 400 300 Z" fill="#E85B8A" stroke="#000" stroke-width="20" stroke-linejoin="round"/>
+    <!-- Top petal -->
+    <path d="M 360 240 Q 380 160 400 120 Q 370 200 360 280 Z" fill="#E85B8A" stroke="#000" stroke-width="20" stroke-linejoin="round"/>
+    <!-- Top-left petal -->
+    <path d="M 300 280 Q 280 220 260 180 Q 300 240 340 300 Z" fill="#E85B8A" stroke="#000" stroke-width="20" stroke-linejoin="round"/>
+    
+    <!-- Center of flower -->
+    <circle cx="380" cy="340" r="40" fill="#000"/>
+    
+    <!-- Flower stamens -->
+    <line x1="380" y1="340" x2="380" y2="280" stroke="#000" stroke-width="3"/>
+    <line x1="380" y1="340" x2="410" y2="300" stroke="#000" stroke-width="3"/>
+    <line x1="380" y1="340" x2="420" y2="320" stroke="#000" stroke-width="3"/>
+    <line x1="380" y1="340" x2="400" y2="360" stroke="#000" stroke-width="3"/>
+    <line x1="380" y1="340" x2="370" y2="370" stroke="#000" stroke-width="3"/>
+    
+    <!-- Dots at stamen tips -->
+    <circle cx="380" cy="280" r="4" fill="#000"/>
+    <circle cx="410" cy="300" r="4" fill="#000"/>
+    <circle cx="420" cy="320" r="4" fill="#000"/>
+    <circle cx="400" cy="360" r="4" fill="#000"/>
+    <circle cx="370" cy="370" r="4" fill="#000"/>
+    
+    <!-- Leaf -->
+    <ellipse cx="260" cy="420" rx="35" ry="60" fill="#5AB85C" stroke="#000" stroke-width="15" transform="rotate(-45 260 420)"/>
+    <path d="M 240 380 Q 260 420 280 460" stroke="#000" stroke-width="8" fill="none"/>
+  </g>
+  
+  <!-- Car -->
+  <g id="car">
+    <!-- Car body -->
+    <path d="M 600 480 L 920 480 Q 940 480 940 500 L 940 600 Q 940 620 920 620 L 600 620 Q 580 620 580 600 L 580 500 Q 580 480 600 480 Z" 
+          fill="none" stroke="#000" stroke-width="20" stroke-linejoin="round"/>
+    
+    <!-- Car window -->
+    <path d="M 720 480 L 880 480 Q 900 480 900 500 L 900 550 Q 900 570 880 570 L 720 570 Z" 
+          fill="none" stroke="#000" stroke-width="20" stroke-linejoin="round"/>
+    
+    <!-- Front wheel -->
+    <circle cx="850" cy="640" r="60" fill="none" stroke="#000" stroke-width="20"/>
+    <circle cx="850" cy="640" r="35" fill="none" stroke="#000" stroke-width="8"/>
+    
+    <!-- Back wheel -->
+    <circle cx="650" cy="640" r="60" fill="none" stroke="#000" stroke-width="20"/>
+    <circle cx="650" cy="640" r="35" fill="none" stroke="#000" stroke-width="8"/>
+    
+    <!-- Headlight -->
+    <circle cx="930" cy="520" r="25" fill="none" stroke="#000" stroke-width="15"/>
+  </g>
+  
+  <!-- Baseline -->
+  <line x1="200" y1="700" x2="950" y2="700" stroke="#000" stroke-width="15"/>
+</svg>
