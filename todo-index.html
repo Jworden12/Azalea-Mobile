@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List Application</title>
+    <link rel="stylesheet" href="todo-styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>📝 My To-Do List</h1>
+            <p class="subtitle">Stay organized and productive</p>
+        </header>
+
+        <div class="main-content">
+            <!-- Input Section -->
+            <div class="input-section">
+                <div class="input-wrapper">
+                    <input 
+                        type="text" 
+                        id="todoInput" 
+                        placeholder="Add a new task..."
+                        class="todo-input"
+                    >
+                    <button id="addBtn" class="add-btn">
+                        <span>+</span> Add Task
+                    </button>
+                </div>
+                <div class="input-helpers">
+                    <button id="clearCompletedBtn" class="helper-btn">
+                        Clear Completed
+                    </button>
+                    <button id="clearAllBtn" class="helper-btn danger">
+                        Clear All
+                    </button>
+                </div>
+            </div>
+
+            <!-- Filter Section -->
+            <div class="filter-section">
+                <button class="filter-btn active" data-filter="all">
+                    All <span class="filter-count" id="countAll">0</span>
+                </button>
+                <button class="filter-btn" data-filter="active">
+                    Active <span class="filter-count" id="countActive">0</span>
+                </button>
+                <button class="filter-btn" data-filter="completed">
+                    Completed <span class="filter-count" id="countCompleted">0</span>
+                </button>
+            </div>
+
+            <!-- Stats Section -->
+            <div class="stats-section">
+                <div class="stat-item">
+                    <span class="stat-label">Total Tasks:</span>
+                    <span class="stat-value" id="totalTasks">0</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">Completed:</span>
+                    <span class="stat-value" id="completedTasks">0</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">Remaining:</span>
+                    <span class="stat-value" id="remainingTasks">0</span>
+                </div>
+            </div>
+
+            <!-- Tasks List -->
+            <div class="tasks-section">
+                <ul id="todoList" class="todo-list">
+                    <!-- Tasks will be added here by JavaScript -->
+                </ul>
+                <div id="emptyState" class="empty-state">
+                    <p>📭 No tasks yet. Add one to get started!</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>Tasks are automatically saved to your browser</p>
+        </footer>
+    </div>
+
+    <script src="todo-script.js"></script>
+</body>
+</html>
